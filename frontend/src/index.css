@@ -1,0 +1,134 @@
+/* === Base Styles === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+body, html, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* === Global Element Defaults === */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section,
+.container {
+  padding: 40px 60px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #4f46e5;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4338ca;
+}
+
+/* === Responsive Styles === */
+
+/* Tablets (≤1024px) */
+@media screen and (max-width: 1024px) {
+  .section,
+  .container {
+    padding: 30px 40px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile Phones (≤768px) */
+@media screen and (max-width: 768px) {
+  .section,
+  .container {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar,
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .form-group,
+  input,
+  textarea {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+}

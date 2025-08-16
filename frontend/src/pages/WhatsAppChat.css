@@ -1,0 +1,56 @@
+/* ===========================
+   WhatsApp Floating Button
+=========================== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* ✅ Changed from left to right */
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect for button */
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #1ebe5d;
+}
+
+/* ===========================
+   Tooltip Styling
+=========================== */
+.tooltip-text {
+  visibility: hidden;
+  width: 110px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  right: 65px; /* ✅ Positioned on left side of the button */
+  bottom: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 12px;
+}
+
+/* Show tooltip on hover */
+.whatsapp-float:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.whatsapp-icon {
+  margin-top: 2px;
+}
